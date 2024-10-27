@@ -34,7 +34,6 @@
         "memberSyntaxSortOrder": ["all", "multiple", "single", "none"]
       }
     ],
-    "sort-keys": "warn",
     "sort-vars": "warn",
     "yoda": "warn"
   }
