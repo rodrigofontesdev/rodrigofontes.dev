@@ -1,9 +1,20 @@
+export const commom = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
+  manifest: `${process.env.NEXT_PUBLIC_APP_URL}/manifest.json`,
+  applicationName: `${process.env.NEXT_PUBLIC_APP_NAME} Portfolio`,
+  authors: {
+    name: process.env.NEXT_PUBLIC_APP_NAME,
+    url: process.env.NEXT_PUBLIC_APP_URL,
+  },
+  creator: process.env.NEXT_PUBLIC_APP_NAME,
+  publisher: process.env.NEXT_PUBLIC_APP_NAME,
+}
+
 export const openGraph = {
   openGraph: {
-    title: 'Rodrigo Fontes | Desenvolvedor Front-End',
-    description:
-      'Rodrigo Fontes é um Desenvolvedor Front-End com 9 anos de experiência, atuando em mais de 50 projetos ao longo da carreira.',
-    siteName: 'Rodrigo Fontes',
+    title: `${process.env.NEXT_PUBLIC_APP_NAME} | Desenvolvedor Front-End`,
+    description: `${process.env.NEXT_PUBLIC_APP_NAME} é um Desenvolvedor Front-End com 9 anos de experiência, atuando em mais de 50 projetos ao longo da carreira.`,
+    siteName: process.env.NEXT_PUBLIC_APP_NAME,
     url: '/',
     type: 'profile',
     firstName: 'Rodrigo',
@@ -34,9 +45,8 @@ export const openGraph = {
 
 export const twitterCard = {
   twitter: {
-    title: 'Rodrigo Fontes | Desenvolvedor Front-End',
-    description:
-      'Rodrigo Fontes é um Desenvolvedor Front-End com 9 anos de experiência, atuando em mais de 50 projetos ao longo da carreira.',
+    title: `${process.env.NEXT_PUBLIC_APP_NAME} | Desenvolvedor Front-End`,
+    description: `${process.env.NEXT_PUBLIC_APP_NAME} é um Desenvolvedor Front-End com 9 anos de experiência, atuando em mais de 50 projetos ao longo da carreira.`,
     card: 'summary_large_image',
     images: [
       {
@@ -48,18 +58,6 @@ export const twitterCard = {
       },
     ],
   },
-}
-
-export const commom = {
-  metadataBase: new URL('https://rodrigofontes.dev'),
-  manifest: new URL('https://rodrigofontes.dev/manifest.json'),
-  applicationName: 'Rodrigo Fontes Portfolio',
-  authors: {
-    name: 'Rodrigo Fontes',
-    url: new URL('https://rodrigofontes.dev'),
-  },
-  creator: 'Rodrigo Fontes',
-  publisher: 'Rodrigo Fontes',
 }
 
 export const robots = {
