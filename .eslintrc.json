@@ -24,16 +24,6 @@
     "prefer-const": "error",
     "prefer-template": "warn",
     "require-await": "error",
-    "sort-imports": [
-      "warn",
-      {
-        "allowSeparatedGroups": false,
-        "ignoreCase": true,
-        "ignoreDeclarationSort": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["all", "multiple", "single", "none"]
-      }
-    ],
     "sort-vars": "warn",
     "yoda": "warn"
   }
