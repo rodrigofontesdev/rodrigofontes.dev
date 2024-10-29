@@ -7,7 +7,7 @@ import logoLightImage from '@/assets/logo-light.svg'
 export function Header() {
   return (
     <header className="fixed top-0 bottom-0 flex flex-col border-r border-r-white/10">
-      <div className="flex border-b border-b-white/10">
+      <div className="h-20 flex border-b border-b-white/10">
         <Link
           href="/"
           className="py-5 px-20 hover:bg-[#0F0F0F] transition-all duration-500"
