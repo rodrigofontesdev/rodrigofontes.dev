@@ -1,5 +1,6 @@
 import { commom, openGraph, robots, twitterCard } from './shared-metadata'
 import type { Metadata, Viewport } from 'next'
+import { Noto_Sans as notoSans } from 'next/font/google'
 
 import './globals.css'
 
@@ -24,6 +25,14 @@ export const viewport: Viewport = {
   colorScheme: 'dark',
 }
 
+const primaryFont = notoSans({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  style: ['normal'],
+  display: 'swap',
+  variable: '--font-noto-sans',
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className="antialiased bg-black">{children}</body>
+      <body className={`${primaryFont.variable} antialiased bg-black`}>{children}</body>
     </html>
   )
 }
