@@ -1,4 +1,3 @@
-import Link, { LinkProps } from 'next/link'
 import { ReactNode } from 'react'
 
 type MenuRootProps = {
@@ -9,10 +8,6 @@ type MenuItemProps = {
   children: ReactNode
   isActive?: boolean
 }
-
-type MenuLinkProps = {
-  text: string
-} & LinkProps
 
 function MenuRoot({ children }: MenuRootProps) {
   return (
@@ -31,25 +26,13 @@ function MenuItem({ children, isActive }: MenuItemProps) {
       className="relative group border-t border-t-white/10 last:border-b last:border-b-transparent hover:bg-[#0F0F0F] data-[active=true]:bg-[#0F0F0F] transition-all duration-500"
     >
       <span className="w-2 h-2 absolute -top-px -right-px border-t border-r border-transparent group-hover:border-white group-data-[active=true]:border-white transition-colors duration-500" />
-      {children}
+      <span className="text-sm font-semibold uppercase *:block *:py-5 *:px-10">{children}</span>
       <span className="w-2 h-2 absolute -bottom-px -right-px border-b border-r border-transparent group-hover:border-white group-data-[active=true]:border-white transition-colors duration-500" />
     </li>
-  )
-}
-
-function MenuLink({ text, ...props }: MenuLinkProps) {
-  return (
-    <Link
-      className="block py-6 text-sm text-center font-semibold uppercase"
-      {...props}
-    >
-      {text}
-    </Link>
   )
 }
 
 export const MainMenu = {
   Root: MenuRoot,
   Item: MenuItem,
-  Link: MenuLink,
 }

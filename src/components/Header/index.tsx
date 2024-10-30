@@ -23,38 +23,23 @@ export function Header() {
 
       <MainMenu.Root>
         <MainMenu.Item isActive>
-          <MainMenu.Link
-            href="#"
-            text="Home"
-          />
+          <Link href="#">Home</Link>
         </MainMenu.Item>
 
         <MainMenu.Item>
-          <MainMenu.Link
-            href="#"
-            text="Sobre"
-          />
+          <Link href="#">Sobre</Link>
         </MainMenu.Item>
 
         <MainMenu.Item>
-          <MainMenu.Link
-            href="#"
-            text="Experiência"
-          />
+          <Link href="#">Experiência</Link>
         </MainMenu.Item>
 
         <MainMenu.Item>
-          <MainMenu.Link
-            href="#"
-            text="Projetos"
-          />
+          <Link href="#">Projetos</Link>
         </MainMenu.Item>
 
         <MainMenu.Item>
-          <MainMenu.Link
-            href="#"
-            text="Contato"
-          />
+          <Link href="#">Contato</Link>
         </MainMenu.Item>
       </MainMenu.Root>
     </header>
