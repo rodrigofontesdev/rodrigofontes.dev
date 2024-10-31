@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${primaryFont.variable} antialiased bg-black`}>{children}</body>
+      <body className={`${primaryFont.variable} antialiased bg-black text-white`}>{children}</body>
     </html>
   )
 }

@@ -9,9 +9,9 @@ const config: Config = {
   plugins: [],
   theme: {
     extend: {
-      colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+      backgroundImage: {
+        'radial-gradient':
+          'radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 100%)',
       },
     },
   },
