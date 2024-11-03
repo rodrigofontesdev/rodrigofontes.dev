@@ -13,7 +13,8 @@ export const commom = {
 export const openGraph = {
   openGraph: {
     title: `${process.env.NEXT_PUBLIC_APP_NAME} | Desenvolvedor Front-End`,
-    description: `${process.env.NEXT_PUBLIC_APP_NAME} é um Desenvolvedor Front-End com 9 anos de experiência, atuando em mais de 50 projetos ao longo da carreira.`,
+    description: `${process.env.NEXT_PUBLIC_APP_NAME} é um Desenvolvedor Front-End com 9 anos de
+    experiência, atuando em mais de 50 projetos ao longo da carreira.`,
     siteName: process.env.NEXT_PUBLIC_APP_NAME,
     url: '/',
     type: 'profile',
@@ -46,7 +47,8 @@ export const openGraph = {
 export const twitterCard = {
   twitter: {
     title: `${process.env.NEXT_PUBLIC_APP_NAME} | Desenvolvedor Front-End`,
-    description: `${process.env.NEXT_PUBLIC_APP_NAME} é um Desenvolvedor Front-End com 9 anos de experiência, atuando em mais de 50 projetos ao longo da carreira.`,
+    description: `${process.env.NEXT_PUBLIC_APP_NAME} é um Desenvolvedor Front-End com 9 anos de
+    experiência, atuando em mais de 50 projetos ao longo da carreira.`,
     card: 'summary_large_image',
     images: [
       {

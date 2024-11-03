@@ -1,12 +1,15 @@
-import { commom, openGraph, robots, twitterCard } from './shared-metadata'
+import { Header } from '@/components/Header'
+import { TopBar } from '@/components/TopBar'
 import type { Metadata, Viewport } from 'next'
 import { Noto_Sans as notoSans } from 'next/font/google'
+import { commom, openGraph, robots, twitterCard } from './shared-metadata'
 
 import './globals.css'
 
 export const metadata: Metadata = {
   title: `${process.env.NEXT_PUBLIC_APP_NAME} | Desenvolvedor Front-End`,
-  description: `${process.env.NEXT_PUBLIC_APP_NAME} é um Desenvolvedor Front-End com 9 anos de experiência, atuando em mais de 50 projetos ao longo da carreira.`,
+  description: `${process.env.NEXT_PUBLIC_APP_NAME} é um Desenvolvedor Front-End com 9 anos de
+  experiência, atuando em mais de 50 projetos ao longo da carreira.`,
   alternates: {
     canonical: '/',
   },
@@ -40,7 +43,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${primaryFont.variable} antialiased bg-black text-white`}>{children}</body>
+      <body className={`${primaryFont.variable} bg-black text-white antialiased scroll-smooth`}>
+        <Header />
+
+        <main className="ml-[12.5rem]">
+          <TopBar />
+
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
