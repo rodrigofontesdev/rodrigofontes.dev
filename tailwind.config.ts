@@ -10,8 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'radial-gradient':
-          'radial-gradient(circle at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 100%)',
+        'radial-gradient': 'radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%)',
       },
     },
   },
